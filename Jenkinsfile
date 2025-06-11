@@ -26,7 +26,6 @@ pipeline {
 // 젠킨스 파이프라인 구성 시 파라미터 설정
         booleanParam defaultValue: false, description: '', name: 'RELEASE'
     }
-    
     environment {
         GIT_URL = "https://github.com/jangseungwon08/k8s-backend-alim.git"
         GITHUB_CREDENTIAL = "github-token"
