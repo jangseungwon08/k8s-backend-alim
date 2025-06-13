@@ -1,0 +1,10 @@
+volumes:
+  - name: backend-alim-config-volume
+    configMap:
+      name: backend-alim-config
+      items:
+      - key: application-dev.yml
+        path: application-dev.yml
+    volumeMounts:
+      mountPath: /etc/config
+      name: backend-alim-config-volume
